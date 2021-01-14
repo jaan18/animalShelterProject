@@ -46,13 +46,19 @@
             <a href="" class="nav-link">Acerca De Nosotros</a>
           </li>
           <li class="nav-item">
-            <a href="" class="nav-link">Explore</a>
+            <a href="" class="nav-link">Adopciones</a>
           </li>
           <li class="nav-item">
             <a href="" class="nav-link">Contacto</a>
           </li>
           <li class="nav-item">
-            <a href="" class="nav-link">Agendar Una Cita</a>
+            <a
+              href=""
+              class="nav-link"
+              data-toggle="modal"
+              data-target="#bookingModal"
+              >Agendar Una Cita</a
+            >
           </li>
         </ul>
       </div>
@@ -68,7 +74,12 @@
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil
             dolore quod animi cupiditate!
           </p>
-          <button id="book" class="btn btn-lg btn-primary px-5">
+          <button
+            id="book"
+            class="btn btn-lg btn-primary px-5"
+            data-toggle="modal"
+            data-target="#bookingModal"
+          >
             ¡AGENDA UNA CITA!
           </button>
         </div>
@@ -335,16 +346,63 @@
           <a href="" class="nav-link text-white">Acerca De Nosotros</a>
         </li>
         <li class="nav-item">
-          <a href="" class="nav-link text-white">Explore</a>
+          <a href="" class="nav-link text-white">Adopciones</a>
         </li>
         <li class="nav-item">
           <a href="" class="nav-link text-white">Contacto</a>
         </li>
         <li class="nav-item">
-          <a href="" class="nav-link text-white">Agendar una cita</a>
+          <a
+            href=""
+            class="nav-link text-white"
+            data-toggle="modal"
+            data-target="#bookingModal"
+            >Agendar una cita</a
+          >
         </li>
       </ul>
     </section>
+
+    <!-- Booking Modal -->
+    <div class="modal" id="bookingModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Agendar una cita</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>llena los siguientes campos para poder agendarte una cita</p>
+            <form>
+              <div class="form-group">
+                <label for="email"></label>
+                <input type="email" class="form-control" id="email" placeholder="tucorreo@dominio.com">
+              </div>
+              <div class="form-group">
+                <label for="name"></label>
+                <input type="name" class="form-control" id="name" placeholder="Nombre completo">
+              </div>
+              <div class="form-group">
+                <label for="tel"></label>
+                <input type="tel" class="form-control" id="tel" placeholder="Telefono">
+              </div>
+              <div class="form-group">
+                <label for="requests">Comentarios</label>
+                <textarea name="" id="requests"  rows="3" class="form-control"></textarea>
+              </div>
+            </form>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
