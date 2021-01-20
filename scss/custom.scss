@@ -5,6 +5,7 @@ body {
   font-family: "Raleway", sans-serif;
   max-width: 100%;
   overflow-x: hidden;
+  background-color: #f0f4f8;
 }
 
 .navbar {
@@ -23,7 +24,8 @@ body {
 
 #showcase {
   background: url("../images/main.jpg") top center / cover no-repeat;
-  min-height: 750px;
+  min-height: 85vh;
+
   h1 {
     font-family: "Questrial", sans-serif;
     line-height: 1;
