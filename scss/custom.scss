@@ -1,7 +1,9 @@
 //
 
+html,
 body {
   font-family: "Raleway", sans-serif;
+  max-width: 100%;
   overflow-x: hidden;
 }
 
@@ -61,4 +63,12 @@ body {
       font-size: 4rem;
     }
   }
+}
+
+#adopcionesHeader {
+  background: rgb(207, 207, 207);
+}
+
+.navbar-brand > img {
+  width: 200px;
 }
